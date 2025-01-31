@@ -1,7 +1,8 @@
+import React from "react";
+import TopSidebar from "./components/TopSidebar";
+
 function App() {
-  return (
-   <div>hello!</div>
-  );
+    return <TopSidebar />;
 }
 
 export default App;
