@@ -1,14 +1,19 @@
 import React from "react";
 import "../assets/stylesheets/TopSideBar.css";
 import TopSidebarLink from "./TopSidebarLink";
+import homeIcon from "../assets/images/TopSidebarImages/home.svg";
+import messagesIcon from "../assets/images/TopSidebarImages/messages.svg";
+import tasksIcon from "../assets/images/TopSidebarImages/tasks.svg";
+import membersIcon from "../assets/images/TopSidebarImages/members.svg";
+import settingsIcon from "../assets/images/TopSidebarImages/settings.svg";
 
 function TopSidebar() {
     const buttons = [
-        { name: "Home", icon: "../assets/images/TopSidebarImages/home.svg", link: "/" },
-        { name: "Messages", icon: "../assets/images/TopSidebarImages/messages.svg", link: "/" },
-        { name: "Tasks", icon: "../assets/images/TopSidebarImages/tasks.svg", link: "/" },
-        { name: "Members", icon: "../assets/images/TopSidebarImages/members.svg", link: "/" },
-        { name: "Settings", icon: "../assets/images/TopSidebarImages/settings.svg", link: "/" },
+        { name: "Home", icon: homeIcon, link: "/" },
+        { name: "Messages", icon: messagesIcon, link: "/" },
+        { name: "Tasks", icon: tasksIcon, link: "/" },
+        { name: "Members", icon: membersIcon, link: "/" },
+        { name: "Settings", icon: settingsIcon, link: "/" },
     ];
 
     return (
