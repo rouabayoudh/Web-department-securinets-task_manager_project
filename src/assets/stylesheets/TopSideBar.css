@@ -1,0 +1,34 @@
+.top-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: white; /* White background */
+    width: 12%;
+    height: 10%; /* Full height */
+    
+}
+
+.top-sidebar-button {
+    font-family: 'inter';
+    font-size: 16;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #787486; /* Gray text color */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.top-sidebar-button :hover {
+    color: #bbbbbb ; /* Light gray background on hover */
+}
+
+.top-sidebar-button img {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%); /* Make icons gray */
+}
