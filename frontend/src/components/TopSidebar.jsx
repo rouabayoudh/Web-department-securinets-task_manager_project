@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/stylesheets/TopSideBar.css";
+import TopSidebarLink from "./TopSidebarLink";
 
 function TopSidebar() {
     const buttons = [
@@ -13,10 +14,7 @@ function TopSidebar() {
     return (
         <div className="top-sidebar">
             {buttons.map((button, index) => (
-                <a key={index} className="top-sidebar-button" href={button.link}>
-                    <img src={button.icon} alt={button.name} />
-                    <span aria-label={button.name}>{button.name}</span>
-                </a>
+                <TopSidebarLink index={index} name={button.name} icon={button.icon} link={button.link}/> 
             ))}
         </div>
     );
