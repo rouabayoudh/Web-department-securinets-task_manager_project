@@ -1,8 +1,8 @@
 import React from "react";
-import SideBar from "./layout/SideBar";
+import TopSidebar from "./components/TopSidebar";
 
 function App() {
-    return <SideBar />;
+    return <TopSidebar />
 }
 
 export default App;
