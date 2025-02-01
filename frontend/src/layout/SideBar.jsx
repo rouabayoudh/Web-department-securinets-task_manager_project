@@ -1,15 +1,15 @@
+// SideBar.js
 import React from "react";
 import TopSidebar from "../components/TopSidebar";
 import NotificationsPanel from "../components/NotificationsPanel";
 import "../assets/stylesheets/SideBar.css";  // Import the CSS file
+import PorjectSideBar from "../components/PorjectSideBar";
 
 function SideBar() {
     return (
-        <div className="sidebar-container">   {/* Use the class name here */}
-            {/* Top Sidebar */}
+        <div >   
             <TopSidebar />
-
-            {/* Notifications Panel */}
+            <PorjectSideBar />
             <NotificationsPanel />
         </div>
     );

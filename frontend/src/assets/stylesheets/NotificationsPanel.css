@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    transform: translateY(-40px);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    gap: 20px;
+    z-index: 1000;
 }
 
 .icon-container {
@@ -11,33 +14,33 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -20px; /* Moves the icon higher */
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    
 }
 
 .content-box::before {
     content: "";
     position: absolute;
-    width: 80px; /* Adjust width as needed */
-    height: 40px; /* Half of the width to create a semi-circle */
-    background:  rgba(242, 236, 236, 0.608) ;
-    border-radius: 80px 80px 0 0; /* Top half is rounded, bottom is flat */
-    top: -40px; /* Moves it behind the content box */
+    width: 80px;
+    height: 40px;
+    background: rgba(242, 236, 236, 0.608);
+    border-radius: 80px 80px 0 0;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1; 
+    z-index: -1;
 }
+
 .icon-container::after {
     content: "";
     position: absolute;
     width: 50px;
     height: 50px;
     background: radial-gradient(circle,  
-        rgba(255, 224, 88, 0.8) 1%,  /* Strong yellow in the center */
-        rgba(242, 236, 236, 0.608) 70%  /* Soft gray at the edges */
+        rgba(255, 224, 88, 0.8) 1%,  
+        rgba(242, 236, 236, 0.608) 70%
     );
     border-radius: 100%;
     z-index: -2;
@@ -46,15 +49,10 @@
     transform: translate(-50%, -50%);
 }
 
-
-
-
 .icon {
     font-size: 28px;
     color: gold;
 }
-
-
 
 .content-box {
     width: 230px;
@@ -63,28 +61,21 @@
     background: rgba(242, 236, 236, 0.608);
     padding: 12px;
     font-weight: bold;
-    border-radius: 20px ;
+    border-radius: 20px;
     position: relative;
-    margin-top: -5px; /* Adjusted for better spacing */
+    margin-top: -5px;
     z-index: 5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 12px; 
-    
+    gap: 12px;
 }
 
-/* Empty message inside the content box */
 .empty-message {
     color: rgb(13, 1, 1);
     font-size: 15px;
-    
 }
-
-
-
-
 
 .write-message-button {
     background-color: white !important;
@@ -93,7 +84,6 @@
     text-transform: none !important;
     font-weight: 500 !important;
     width: 85%;
-
     font-size: 12px;
 }
 
