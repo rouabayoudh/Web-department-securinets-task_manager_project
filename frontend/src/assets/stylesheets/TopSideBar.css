@@ -32,3 +32,42 @@
     height: 20px;
     filter: grayscale(100%); /* Make icons gray */
 }
+
+.project-dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.project-title { /* kept the colors/fonts used on the top-side-bar buttons */
+    font-family: 'inter';
+    font-size: 13px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #787486aa; 
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-button {
+    font-family: 'inter';
+    font-size: 16;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #787486; 
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+.active {
+    color: #111;
+    background-color: #b6acc455;
+}
