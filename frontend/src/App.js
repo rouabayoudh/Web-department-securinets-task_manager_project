@@ -2,7 +2,7 @@ import React from "react";
 import TopSidebar from "./components/TopSidebar";
 
 function App() {
-    return <TopSidebar />;
+    return <TopSidebar />
 }
 
 export default App;
