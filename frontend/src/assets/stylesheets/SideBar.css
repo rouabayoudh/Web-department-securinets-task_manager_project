@@ -1,0 +1,12 @@
+.sidebar-container {
+    display: flex;                   /* Use flexbox to position elements */
+    flex-direction: column;          /* Stack elements vertically */
+    justify-content: space-between;  /* Space elements between top and bottom */
+    width: 250px;                    /* Set the width of the sidebar */
+    height: 100vh;                   /* Ensure it takes full screen height */
+    padding: 10px;
+    position: fixed;                 /* Fix the sidebar to the left */
+    left: 0;                         /* Position it to the left side of the screen */
+    top: 0;                          /* Align it to the top */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
