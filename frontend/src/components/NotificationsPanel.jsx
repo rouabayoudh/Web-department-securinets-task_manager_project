@@ -15,16 +15,20 @@ const NotificationsPanel = () => {
 
       
       <Box className="content-box">
-        <Typography variant="h6" >Thoughts Time</Typography>
-        <Typography className="empty-message">
-          We don’t have any notice for you, till then you can share your thoughts with your peers.
+        <Typography  >Thoughts Time</Typography>
+        <Typography  className="empty-message">
+        We don’t have any notice <br />
+        for you,till then you can <br />
+        share 
+        your thoughts <br />
+        with your peers.
         </Typography>
         <Button 
-          variant="contained" 
+          
           className="write-message-button" 
           onClick={() => alert("Open message modal or navigate")}
         >
-          Write a message
+          <Typography  className="empty-notif-message" > Write a message</Typography>
         </Button>
         
       </Box>

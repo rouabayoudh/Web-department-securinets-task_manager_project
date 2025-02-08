@@ -1,22 +1,23 @@
 /* SideBar.css */
 .sidebar-container {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    width: 300px;                    
-    height: 100vh;                   
-    padding: 5px;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    bottom: 20px; 
+    width: 180px; 
+    height: 85vh; 
+    padding: 10px;       
 }
 
 /*NEW*/
   
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    width: 22%;
-    background-color: white;
-    transition: transform 0.3s ease;
-    position: relative;
+    position: fixed;
+    bottom: 20px;
+    height: 94vh;
+      width: 14%;
+    
+    
 }
 
 .sidebar.hidden {

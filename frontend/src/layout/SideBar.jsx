@@ -22,7 +22,7 @@ function UpperSidebar() {
             <img src={isVisible ? arrowLeft : arrowRight} alt="" onClick={toggleSidebar}/>
         </div>
         {isVisible && (
-            <div className="sidebar-content">
+            <div className="sidebar-container">
                 <TopSidebar />
                 <PorjectSideBar />
                 <NotificationsPanel />
