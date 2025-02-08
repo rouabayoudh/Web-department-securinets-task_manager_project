@@ -8,5 +8,37 @@
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
+/*NEW*/
+  
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    background-color: white;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.sidebar.hidden {
+    transform: translateX(-90%); /* Adjust based on the width */
+    
+}
+
+.sidebar-header {
+    font-family: 'inter';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-header img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
 
 

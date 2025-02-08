@@ -1,18 +1,35 @@
-// SideBar.js
-import React from "react";
+import React, { useState } from 'react';
 import TopSidebar from "../components/TopSidebar";
 import NotificationsPanel from "../components/NotificationsPanel";
-import "../assets/stylesheets/SideBar.css";  // Import the CSS file
 import PorjectSideBar from "../components/PorjectSideBar";
 
-function SideBar() {
-    return (
-        <div >   
-            <TopSidebar />
-            <PorjectSideBar />
-            <NotificationsPanel />
+import '../assets/stylesheets/SideBar.css';
+
+import arrowLeft from "../assets/images/TopSidebarImages/arrow-left.svg";
+import arrowRight from "../assets/images/TopSidebarImages/arrow-right.svg";
+
+function UpperSidebar() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsVisible(!isVisible);
+  };
+
+  return (
+    <div className={`sidebar ${isVisible ? '' : 'hidden'}`}>
+        <div className="sidebar-header">
+            <span>Project M.</span>
+            <img src={isVisible ? arrowLeft : arrowRight} alt="" onClick={toggleSidebar}/>
         </div>
-    );
+        {isVisible && (
+            <div className="sidebar-content">
+                <TopSidebar />
+                <PorjectSideBar />
+                <NotificationsPanel />
+            </div>
+        )}
+    </div>
+  );
 }
 
-export default SideBar;
+export default UpperSidebar;

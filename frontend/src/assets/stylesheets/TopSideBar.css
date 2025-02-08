@@ -1,12 +1,8 @@
 .top-sidebar {
     display: flex;
     flex-direction: column;
-    
-    padding: 10px;
     background-color: white; /* White background */
-    width: 12%;
     height: auto; 
-    
 }
 
 
@@ -29,6 +25,7 @@
 }
 
 .top-sidebar-button img {
+    color: #787486;
     width: 20px;
     height: 20px;
     filter: grayscale(100%); /* Make icons gray */
@@ -72,3 +69,4 @@
     color: #111;
     background-color: #b6acc455;
 }
+
