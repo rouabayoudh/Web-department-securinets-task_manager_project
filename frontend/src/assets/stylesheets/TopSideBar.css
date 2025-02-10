@@ -3,8 +3,7 @@
     flex-direction: column;
     background-color: white; /* White background */
     height: auto; 
-    width: 210px;
-    border-top: 1px solid #e0e0e0; 
+    width: 210px;  
     
 }
 
@@ -21,6 +20,8 @@
     text-decoration: none;
     color: #787486; /* Gray text color */
     transition: background-color 0.3s ease;
+    
+    
 }
 
 .top-sidebar-button :hover {
@@ -39,6 +40,7 @@
     height: 10px;
     background-color: red;
     border-radius: 50%;
+    
 }
 
 .project-title { /* kept the colors/fonts used on the top-side-bar buttons */
@@ -47,14 +49,14 @@
     font-weight: bolder;
     display: flex;
     align-items: center;
-    gap: 10px;
+    
     padding: 10px;
     text-decoration: none;
     color: #787486aa; 
-    
+    position: relative;
     width: 190px;
     transition: background-color 0.3s ease;
-    
+    border-top: 1px solid #e0e0e0; 
      
 }
 

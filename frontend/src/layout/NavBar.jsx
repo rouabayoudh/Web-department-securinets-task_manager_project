@@ -5,7 +5,7 @@ import SearchBar from "../components/SearchBar";
 
 function NavBar() {
   return (
-    <div >
+    <div className="navbar">
         <ProfileNav /> 
         <SearchBar />  
     </div> 
