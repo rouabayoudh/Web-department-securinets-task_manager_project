@@ -4,9 +4,12 @@
     display: flex;
     flex-direction: column;
     bottom: 20px; 
-    width: 180px; 
+    width: 200px; 
     height: 85vh; 
-    padding: 10px;       
+    padding: 10px; 
+    border-right: 1px solid #e0e0e0;
+      
+        
 }
 
 /*NEW*/
@@ -15,7 +18,9 @@
     position: fixed;
     bottom: 20px;
     height: 94vh;
-      width: 14%;
+    width: 14%;
+    
+      
     
     
 }
@@ -31,8 +36,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    width: 200px; 
+    height: 3.5vh;
     background-color: white;
-    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    
+    
+    
 }
 
 .sidebar-header img {

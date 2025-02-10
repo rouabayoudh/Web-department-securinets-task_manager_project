@@ -1,9 +1,14 @@
 import React from "react";
+import "../assets/stylesheets/NavBar.css";
 import ProfileNav from "../components/ProfileNavbar";
+import SearchBar from "../components/SearchBar";
 
 function NavBar() {
   return (
-        <ProfileNav />    
+    <div >
+        <ProfileNav /> 
+        <SearchBar />  
+    </div> 
   );
 }
 
