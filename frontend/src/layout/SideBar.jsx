@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TopSidebar from "../components/TopSidebar";
 import NotificationsPanel from "../components/NotificationsPanel";
 import PorjectSideBar from "../components/PorjectSideBar";
+import ProfileNav  from '../components/ProfileNavbar';
 
 import '../assets/stylesheets/SideBar.css';
 
@@ -16,18 +17,22 @@ function UpperSidebar() {
   };
 
   return (
-    <div className={`sidebar ${isVisible ? '' : 'hidden'}`}>
-        <div className="sidebar-header">
-            <span>Project M.</span>
-            <img src={isVisible ? arrowLeft : arrowRight} alt="" onClick={toggleSidebar}/>
-        </div>
-        {isVisible && (
-            <div className="sidebar-container">
-                <TopSidebar />
-                <PorjectSideBar />
-                <NotificationsPanel />
-            </div>
-        )}
+    <div>
+      <ProfileNav />
+      <div className={`sidebar ${isVisible ? '' : 'hidden'}`}>
+          <div className="sidebar-header">
+              <span>Project M.</span>
+              <img src={isVisible ? arrowLeft : arrowRight} alt="" onClick={toggleSidebar}/>
+          </div>
+          {isVisible && (
+              <div className="sidebar-container">
+
+                  <TopSidebar />
+                  <PorjectSideBar />
+                  <NotificationsPanel />
+              </div>
+          )}
+      </div>
     </div>
   );
 }
