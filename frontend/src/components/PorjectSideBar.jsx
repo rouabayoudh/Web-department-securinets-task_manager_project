@@ -38,6 +38,10 @@ function ProjectSideBar() {
             {showAddProject && (
                 <form className="add-project-form">
                     <div className="add-container">
+                        <button className="close-button">X</button>
+                        <center>
+                            <h1>Add a new project</h1>
+                        </center>
                         <input className="add-inp" type="text" placeholder="Enter project name" />
                         <input className="add-inp color-picker" type="color" />
                         <button className="add-inp add-btn" type="submit">Add</button>

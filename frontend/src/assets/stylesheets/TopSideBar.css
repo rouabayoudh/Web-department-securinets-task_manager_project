@@ -201,6 +201,7 @@
     width: 220px;
     height:20px;
     font-family: 'inter';
+    max-width: 50%;
 }
 .color-picker{
     padding: 0px;
@@ -211,6 +212,8 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
+    top:10px;
 }
 .add-btn{
     height: 35px;
@@ -245,14 +248,37 @@ input[type="color"]::-moz-color-swatch {
 .add-project-form button:hover {
     background-color: #4cae4c;
 }
+
 .add-container{
-    background-color: rgba(50, 50, 50);
+    background-color: rgba(30, 30, 30);
     border-radius: 10px;
     align-self: center;
-    height: 70px;
+    height: 160px;
     padding: 10px;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.add-container h1{
+    color: white;
+    font-family: 'inter';
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.add-container .close-button{
+    background-color: red;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    left:375px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.add-container .close-button:hover{
+    background-color: #a00;
+    transform: rotate(360deg);
+
 }
