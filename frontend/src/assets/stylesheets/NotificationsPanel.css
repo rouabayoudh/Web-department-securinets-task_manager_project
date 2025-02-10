@@ -79,10 +79,13 @@
     white-space: nowrap; 
     position: relative;
     
+    
 }
 .empty-notif-message{
     position: relative;
     transform: scale(0.58);
+    
+    
     
     
 }

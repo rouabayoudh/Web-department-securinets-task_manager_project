@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TopSidebar from "../components/TopSidebar";
 import NotificationsPanel from "../components/NotificationsPanel";
 import PorjectSideBar from "../components/PorjectSideBar";
-import ProfileNav  from '../components/ProfileNavbar';
+
 
 import '../assets/stylesheets/SideBar.css';
 
@@ -18,7 +18,6 @@ function UpperSidebar() {
 
   return (
     <div>
-      <ProfileNav />
       <div className={`sidebar ${isVisible ? '' : 'hidden'}`}>
           <div className="sidebar-header">
               <span>Project M.</span>
