@@ -1,0 +1,119 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; 
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    width: 65%;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    position: fixed;
+    right: 40px ;
+  
+}
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight:normal;
+    color: #1a1a1a;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-button {
+    color: #7d4cdb;
+    background-color: #eae2ff; 
+    border: none;
+    border-radius: 6px; 
+    width: 24px; 
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-image {
+    width: 14px; /* Adjust size of the icon inside */
+    height: 14px;
+}
+
+
+
+
+
+.invite-button {
+    color: #7d4cdb;
+    font-weight: 500;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-right: 20px; 
+}
+
+.invite-button .plus {
+    background-color: #eae2ff; 
+    color: #7d4cdb; 
+    border-radius: 6px; 
+    padding: 6.5px 6.5px; 
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4px; 
+    height: 4.5px; 
+}
+
+
+
+.avatars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -8px;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e0e0;
+    color: #555;
+    font-size: 12px;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -8px;
+}
