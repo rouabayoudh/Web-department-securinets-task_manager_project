@@ -1,7 +1,7 @@
 .top-sidebar {
     display: flex;
     flex-direction: column;
-    background-color: white; /* White background */
+    background-color: transparent;
     height: auto; 
     width: 210px;  
     
@@ -58,6 +58,7 @@
     width: 190px;
     transition: background-color 0.3s ease;
     border-top: 1px solid #e0e0e0; 
+    background-color: transparent;
      
 }
 
