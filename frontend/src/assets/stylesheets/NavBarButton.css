@@ -1,0 +1,21 @@
+.navbar-buttons {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Adds space between items */
+    padding: 10px; /* Adds padding around the container */
+}
+
+.navbar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px; /* Adds padding around the icons */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar-button img {
+    width: 20px; /* Set icon size */
+    height: 20px;
+    filter: grayscale(100%);
+}

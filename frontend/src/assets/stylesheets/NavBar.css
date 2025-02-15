@@ -1,8 +1,9 @@
-.navbar{
-    display: fixed;
-    position:relative;
-    padding: 12px;
-    flex-direction:row;
-    border-bottom: 1px solid #e0e0e0;  
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between items */
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
     background-color: transparent;
+    position: relative; /* Ensure the navbar is positioned correctly */
 }
